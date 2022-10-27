@@ -1,0 +1,82 @@
+h1, h2, h3 {
+    font-family: "Arial", sans-serif;
+    text-align: center;
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+div.tip-box {
+    display: flex;
+    flex-direction: row;
+}
+
+button.tip-btn {
+    background-color: #3C89D3;
+    color: white;
+    height: 200px;
+    width: 200px;
+    border: none;
+    margin: 10px;
+    border-radius: 2px;
+    font-size: 40px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+button.tip-btn > h4 {
+    font-size: 40px;
+    padding: 0px;
+    margin: 10px;
+}
+
+button.tip-btn > p {
+    font-size: 18px;
+    margin-right: 8px;
+    margin-top: -10px;
+}
+
+button.tip-btn:active {
+    opacity: 0.9;
+}
+
+button#custom-tip, button#no-tip {
+    background-color: white;
+    border-color: #3C89D3;
+    border-width: 2px;
+    border-style: solid;
+    border-radius: 2px;
+    width: 95%;
+    height: 70px;
+    margin-left: 18px;
+    margin-top: 12px;
+}
+
+a {
+    text-decoration: none;
+}
+
+button#no-tip {
+    margin-top: 20px;
+}
+
+button#custom-tip:active, button#no-tip:active {
+    background-color: #3C89D3;
+    opacity: 0.8;
+    color: white;
+    /* set the speed of the transition */
+    transition: 0.4s;
+    transition-timing-function: linear;
+}
+
+button#custom-tip, button#no-tip > h4 {
+    font-size: 14px;
+    color: #3C89D3;
+}
+
